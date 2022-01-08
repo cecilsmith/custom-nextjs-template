@@ -9,35 +9,21 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import theme from './theme';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
-    imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
-  },
-  {
-    label: 'Bird',
-    imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
-  },
-  {
-    label: 'Bali, Indonesia',
-    imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
-  },
-  {
-    label: 'Goč, Serbia',
-    imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-  },
-  {
     label: 'DJI Matrice 200',
     imgPath:
       'https://www4.djicdn.com/cms_uploads/video/image/4977/cover_770x462_dd4c7a01fae2fa82e40be2d50330e72f.jpg',
   },
+  {
+    label: 'Agricultural Applications of Drone Technology',
+    imgPath:
+      'https://www1.djicdn.com/cms/uploads/b1c5dd224915f796f79acc24c5b1b08e@770*462.png',
+  }
 ];
 
 function SwipeableTextMobileStepper() {
@@ -58,7 +44,7 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-    <Box sx={{ maxWidth: "100%", flexGrow: 1 }} bgcolor="#666666">
+    <Box sx={{ maxWidth: "100%", flexGrow: 1 }} bgcolor="primary">
 
       <Paper
         square
@@ -86,9 +72,9 @@ function SwipeableTextMobileStepper() {
               <Box
                 component="img"
                 sx={{
-                  height: 250,
+                  height: 400,
                   display: 'block',
-                  maxWidth: 500,
+                  maxWidth: 750,
                   overflow: 'hidden',
                   width: 'auto',
                   marginLeft: 'auto',

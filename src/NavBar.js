@@ -3,28 +3,30 @@ import Typography from '@mui/material/Typography';
 import MuiLink from '@mui/material/Link';
 import { AppBar, Button, Toolbar } from '@mui/material';
 import { ThemeContext } from '@emotion/react';
+import theme from './theme';
+import { display, positions } from '@mui/system';
 
 export default function NavBar() {
   return (
     <AppBar>
       <Toolbar>
-        <Typography href="/" variant='body1' color='text.primary'>
+        <Button variant='contained' color='secondary' onClick={() => {
+          window.open("/", "_self")
+        }}>
           DragonTech
-        </Typography>
-        <Typography variant="body2" color="text.primary" marginRight="2%">
-          <Button>
-            <MuiLink color="text.primary" href="/signin">
-              Sign In
-            </MuiLink>
-          </Button>
-          <Button>
-            <MuiLink color="text.primary" href="/signup">
-              Sign Up
-            </MuiLink>
-          </Button>
-        </Typography>
+        </Button>
+
+        <Button variant='contained' color='secondary' onClick={() => {
+          window.open("/signin", "_self")
+        }}>
+          Sign In
+        </Button>
+        <Button variant='contained' color='secondary' onClick={() => {
+          window.open("/signup", "_self")
+        }}>
+          Sign Up
+        </Button>
       </Toolbar>
     </AppBar>
-
   );
 }
