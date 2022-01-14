@@ -71,10 +71,10 @@ function SwipeableTextMobileStepper() {
             {Math.abs(activeStep - index) <= 2 ? (
               <Box
                 component="img"
-                sx={{
-                  height: 400,
+                lx={{
+                  height: 450, //450
                   display: 'block',
-                  maxWidth: 750,
+                  maxWidth: 750, //750
                   overflow: 'hidden',
                   width: 'auto',
                   marginLeft: 'auto',

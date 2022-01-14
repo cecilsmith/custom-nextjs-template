@@ -17,6 +17,12 @@ export default function NavBar() {
         </Button>
 
         <Button variant='contained' color='secondary' onClick={() => {
+          window.open("/about", "_self")
+        }}>
+          About
+        </Button>
+
+        <Button variant='contained' color='secondary' onClick={() => {
           window.open("/signin", "_self")
         }}>
           Sign In
@@ -26,6 +32,16 @@ export default function NavBar() {
         }}>
           Sign Up
         </Button>
+
+        {/*<DropDownMenu
+            value={this.state.selection}
+            onChange={this.handleChange}
+          >
+            <MenuItem value={1} primaryText="English" />
+            <MenuItem value={2} primaryText="Spanish" />
+            <MenuItem value={3} primaryText="French" />
+        </DropDownMenu>*/}
+
       </Toolbar>
     </AppBar>
   );
