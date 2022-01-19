@@ -18,7 +18,7 @@ export default function Index() {
         <Toolbar />
 
         <Typography variant="h4" component="h1" gutterBottom>
-          DragonTech
+          Dragontech
         </Typography>
 
         <SwipeableTextMobileStepper />
@@ -27,10 +27,18 @@ export default function Index() {
           Go to the about page
   </Link>*/}
         <Typography variant="body1" component="body" textAlign="center" paddingTop="15px" paddingBottom="15px">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar facilisis metus, vitae ultrices leo consequat in. In hac habitasse platea dictumst. Etiam venenatis orci id quam cursus condimentum. Etiam ac suscipit diam, ac bibendum nunc. Maecenas eu turpis ex. Vivamus consectetur in ante sodales ultrices. In elementum, sem id viverra scelerisque, purus nulla laoreet magna, at hendrerit urna sapien a justo. Vivamus a ligula ornare, auctor elit eu, ultricies ante. Sed condimentum egestas tincidunt. Mauris sed lorem vitae dui sagittis porta nec sit amet tellus. Mauris sit amet elementum augue, sed mollis diam. Fusce congue ante et tincidunt porta.
+        As the world's population increases and the consumer’s demand for more environmentally responsible and organic agriculture increases, the need for utilizing technology to improve the efficiency of agricultural production becomes more urgent.
         </Typography>
 
         <Image src={"https://www4.djicdn.com/cms_uploads/video/image/4977/cover_770x462_dd4c7a01fae2fa82e40be2d50330e72f.jpg"} aspectRatio="1.6667"></Image>
+
+        <Typography variant='body1' component='body' textAlign="center" paddingTop="15px" paddingBottom="15px">
+        Dragontech is using high resolution imaging to provide insights and solutions in the Agriculture sector.  Utilizing radiometric thermal, multispectral, hyperspectral and lidar imaging, we are focusing on crop and asset management.  With the advancements in drone capabilities, long range low power data transmission and imaging systems the potential to provide value in the Ag sector is significant.
+        </Typography>
+
+        <Typography variant='body1' component='body' textAlign='center' paddingTop='15px' paddingBottom='15px'>
+        We provide solutions in three different areas; 1) Custom imaging systems fully integrated with Enterprise class drones, 2) Providing a complete drone / imaging solution, 3) Providing back end services including data storage, map integrated imagery of topography (lidar, targeted at drainage), crops (soil analysis, weed identification & sprayer maps, analysis of stand, stress and seed & fertilizer application rates).
+        </Typography>
 
         <Copyright />
       </Box>
