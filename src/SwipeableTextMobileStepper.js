@@ -10,6 +10,7 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import theme from './theme';
+import { height, maxHeight, width } from '@mui/system';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -53,6 +54,7 @@ function SwipeableTextMobileStepper() {
           display: 'flex',
           alignItems: 'center',
           height: 50,
+          maxWidth: width,
           pl: 2,
           bgcolor: 'background.secondary',
         }}
@@ -72,9 +74,9 @@ function SwipeableTextMobileStepper() {
               <Box
                 component="img"
                 lx={{
-                  height: 450, //450
+                  height: 500, //450
                   display: 'block',
-                  maxWidth: 750, //750
+                  maxWidth: 1000, //750
                   overflow: 'hidden',
                   width: 'auto',
                   marginLeft: 'auto',

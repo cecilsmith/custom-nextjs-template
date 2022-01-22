@@ -2,17 +2,15 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import ProTip from '../src/ProTip';
-import Link from '../src/Link';
 import Copyright from '../src/Copyright';
 import NavBar from '../src/NavBar';
-import { Avatar, Paper, Toolbar } from '@mui/material';
+import { Avatar, Divider, List, ListItem, ListItemAvatar, ListItemText, Paper, Toolbar } from '@mui/material';
 import Image from 'material-ui-image';
+import { Translate } from '@mui/icons-material';
 
 export default function About() {
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="md">
       <Box sx={{ my: 4 }}>
         <NavBar />
         <Toolbar />
@@ -29,12 +27,67 @@ export default function About() {
         {/*<Button variant="contained" component={Link} noLinkStyle href="/">
           Go to the main page
   </Button>*/}
-        <Paper elevation="4" square maxWidth="50%">
-          <Avatar src="https://www4.djicdn.com/cms_uploads/video/image/4977/cover_770x462_dd4c7a01fae2fa82e40be2d50330e72f.jpg" />
-          {/*<Image src={"https://www4.djicdn.com/cms_uploads/video/image/4977/cover_770x462_dd4c7a01fae2fa82e40be2d50330e72f.jpg"} aspectRatio="1.6667" style={{display: "flex", width: '25%', height: '5%'}} ></Image> */}
+        <Paper elevation="4" maxWidth="50%">
+          <List sx={{width: '100%', maxWidth: 360}}>
+            <ListItem alignItems='flex-start'>
+              <ListItemAvatar>
+                <Avatar src="https://www4.djicdn.com/cms_uploads/video/image/4977/cover_770x462_dd4c7a01fae2fa82e40be2d50330e72f.jpg"
+                sx={{
+                  width: 56,
+                  height: 56,
+                  left: "-15%",
+                }} />
+              </ListItemAvatar>
+              <ListItemText 
+                primary="Mel Wieting"
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      sx={{ display: 'inline' }}
+                      component="span"
+                      variant="body2"
+                      color="text.secondary">
+                        Founder
+                      </Typography>
+                  </React.Fragment>
+                }>
+                </ListItemText>
+            </ListItem>
+            
+            <Divider variant='inset' component='li' />
+
+            <ListItem alignItems='flex-start'>
+              <ListItemAvatar>
+                <Avatar 
+                  src="https://www4.djicdn.com/cms_uploads/video/image/4977/cover_770x462_dd4c7a01fae2fa82e40be2d50330e72f.jpg"
+                  sx={{
+                    width: 56,
+                    height: 56,
+                    left: "-15%",
+                  }} />
+              </ListItemAvatar>
+              <ListItemText 
+                primary="Nathanael Smith"
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      sx={{
+                        display: 'inline'
+                      }}
+                      component="span"
+                      variant='body2'
+                      color="text.secondary"
+                    >
+                      Intern, Lead Design
+                    </Typography>
+                  </React.Fragment>
+                }
+                >
+
+              </ListItemText>
+            </ListItem>
+          </List>
         </Paper>
-        
-        {/*potentially use/include avatar*/}
 
         <Copyright />
       </Box>
