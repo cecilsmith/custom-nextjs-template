@@ -14,7 +14,6 @@ import Container from '@mui/material/Container';
 import theme from '../src/theme';
 import Copyright from '../src/Copyright';
 import NavBar from '../src/NavBar';
-import { Toolbar } from '@mui/material';
 
 export default function SignUp() {
   const handleSubmit = (event) => {
@@ -29,8 +28,11 @@ export default function SignUp() {
 
   return (
       <Container component="main" maxWidth="xs">
-        <NavBar />
-        <Toolbar />
+        <Box sx={{ my: 16 }}>
+            <NavBar />
+        </Box>
+
+
         <CssBaseline />
         <Box
           sx={{
@@ -114,6 +116,7 @@ export default function SignUp() {
             </Grid>
           </Box>
         </Box>
+        <br />
         <Copyright sx={{ mt: 5 }} />
       </Container>
   );

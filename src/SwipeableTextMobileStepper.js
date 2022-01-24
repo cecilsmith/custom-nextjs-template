@@ -16,14 +16,14 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'DJI Matrice 200',
+    label: 'DJI Matrice 300 RTK',
     imgPath:
-      'https://www4.djicdn.com/cms_uploads/video/image/4977/cover_770x462_dd4c7a01fae2fa82e40be2d50330e72f.jpg',
+      'https://dji-official-fe.djicdn.com/dps/2e12dd56f69aff6dc94f4e03ca2eee10.jpg',
   },
   {
-    label: 'Agricultural Applications of Drone Technology',
+    label: 'Industrial Uses of Our Technology',
     imgPath:
-      'https://www1.djicdn.com/cms/uploads/b1c5dd224915f796f79acc24c5b1b08e@770*462.png',
+      'https://dji-official-fe.djicdn.com/dps/5328c3f4c705108dd3995cd28b745fa0.jpg',
   }
 ];
 

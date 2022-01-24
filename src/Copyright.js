@@ -4,6 +4,7 @@ import MuiLink from '@mui/material/Link';
 
 export default function Copyright() {
   return (
+    <>
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
       <MuiLink color="inherit" href="/">
@@ -12,5 +13,13 @@ export default function Copyright() {
       {' '}
       {new Date().getFullYear()}.
     </Typography>
+    <Typography variant="body2" color="text.secondary" align='center'>
+        {'All Drone Images Property of '}
+        <MuiLink color="inherit" href="https://www.dji.com/">
+          DJI
+        </MuiLink>
+        {'.'}
+    </Typography>
+    </>
   );
 }
