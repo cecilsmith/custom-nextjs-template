@@ -13,8 +13,8 @@ export default function Index() {
   return (
     <Container maxWidth="lg">
       <Box sx={{ my: 8 }}>
-        <NavBarMode />
-        
+        <NavBar />
+
         <Paper elevation="8">
           <SwipeableTextMobileStepper />
         </Paper>
