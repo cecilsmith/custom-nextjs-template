@@ -24,10 +24,10 @@ export default function About() {
         Located in Minneapolis, MN and Huron, SD, Dragontech, LLC is dedicated to using the most advanced imaging technology to increase farm profitability and reduce environmental impacts.
         </Typography>
 
-        {/*<Button variant="contained" component={Link} noLinkStyle href="/">
-          Go to the main page
-  </Button>*/}
-        <Paper elevation="4" maxWidth="50%">
+        <Paper elevation="4">
+          <Typography variant='header1' component="h2" textAlign='left' paddingTop='1%' paddingLeft='1%'>
+            Our Staff:
+          </Typography>
           <List sx={{width: '100%', maxWidth: 360}}>
             <ListItem alignItems='flex-start'>
               <ListItemAvatar>

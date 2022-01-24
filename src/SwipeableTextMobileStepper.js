@@ -46,10 +46,9 @@ function SwipeableTextMobileStepper() {
 
   return (
     <Box sx={{ maxWidth: "100%", flexGrow: 1 }} bgcolor="primary">
-
+      {/*HEADING*/}
       <Paper
-        square
-        elevation={0}
+        elevation="2"
         sx={{
           display: 'flex',
           alignItems: 'center',
@@ -62,6 +61,8 @@ function SwipeableTextMobileStepper() {
         <Typography>{images[activeStep].label}</Typography>
       </Paper>
 
+
+      {/*IMAGE STUFF */}
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
@@ -73,12 +74,12 @@ function SwipeableTextMobileStepper() {
             {Math.abs(activeStep - index) <= 2 ? (
               <Box
                 component="img"
-                lx={{
-                  height: 500, //450
+                sx={{
+                  height: 'auto', //450
                   display: 'block',
-                  maxWidth: 1000, //750
+                  //maxWidth: 1000, //750
                   overflow: 'hidden',
-                  width: 'auto',
+                  width: '100%',
                   marginLeft: 'auto',
                   marginRight: 'auto',
                   marginTop: 'auto',
@@ -91,35 +92,47 @@ function SwipeableTextMobileStepper() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
-      <MobileStepper
-        steps={maxSteps}
-        position="static"
-        activeStep={activeStep}
-        nextButton={
-          <Button
-            size="small"
-            onClick={handleNext}
-            disabled={activeStep === maxSteps - 1}
-          >
-            Next
-            {theme.direction === 'rtl' ? (
-              <KeyboardArrowLeft />
-            ) : (
-              <KeyboardArrowRight />
-            )}
-          </Button>
-        }
-        backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            {theme.direction === 'rtl' ? (
-              <KeyboardArrowRight />
-            ) : (
-              <KeyboardArrowLeft />
-            )}
-            Back
-          </Button>
-        }
-      />
+      <Paper
+        elevation="2"
+        sx={{
+          //display: 'flex',
+          //alignItems: 'center',
+          height: 50,
+          maxWidth: width,
+          //pl: 2,
+          bgcolor: 'background.secondary',
+        }}
+      >
+        <MobileStepper
+          steps={maxSteps}
+          position="static"
+          activeStep={activeStep}
+          nextButton={
+            <Button
+              size="small"
+              onClick={handleNext}
+              disabled={activeStep === maxSteps - 1}
+            >
+              Next
+              {theme.direction === 'rtl' ? (
+                <KeyboardArrowLeft />
+              ) : (
+                <KeyboardArrowRight />
+              )}
+            </Button>
+          }
+          backButton={
+            <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+              {theme.direction === 'rtl' ? (
+                <KeyboardArrowRight />
+              ) : (
+                <KeyboardArrowLeft />
+              )}
+              Back
+            </Button>
+          }
+        />
+      </Paper>
     </Box>
   );
 }

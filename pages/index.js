@@ -32,7 +32,6 @@ export default function Index() {
           Dragontech is using high resolution imaging to provide insights and solutions in the Agriculture sector.  Utilizing radiometric thermal, multispectral, hyperspectral and lidar imaging, we are focusing on crop and asset management.  With the advancements in drone capabilities, long range low power data transmission and imaging systems the potential to provide value in the Ag sector is significant.
         </Typography>
 
-        {/*<Paper elevation={12} maxWidth="100%" variant='outlined'>*/}
         <Paper elevation="12" maxWidth="50%">
           <Typography variant='body1' component='body' textAlign='left' padding="1%">
             We provide solutions in three different areas;
