@@ -2,12 +2,12 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Copyright from '../src/Copyright';
-import NavBar from '../src/NavBar';
-import NavBarMode from '../src/NavBarMode';
+import Copyright from '../components/Copyright';
+import NavBar from '../components/NavBar';
+import NavBarMode from '../components/NavBarMode';
 import { Paper, Toolbar } from '@mui/material';
 import Image from 'material-ui-image';
-import SwipeableTextMobileStepper from '../src/SwipeableTextMobileStepper.js';
+import SwipeableTextMobileStepper from '../components/SwipeableTextMobileStepper.js';
 
 export default function Index() {
   return (

@@ -2,8 +2,8 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Copyright from '../src/Copyright';
-import NavBar from '../src/NavBar';
+import Copyright from '../components/Copyright';
+import NavBar from '../components/NavBar';
 import { Avatar, Divider, List, ListItem, ListItemAvatar, ListItemText, Paper } from '@mui/material';
 import Image from 'material-ui-image';
 
@@ -37,7 +37,7 @@ export default function About() {
           <Typography variant="body1" component="body" textAlign="center" paddingTop="15px" paddingBottom="15px" sx={{ fontWeight: '2' }}>
             Located in Minneapolis, MN and Huron, SD, Dragontech, LLC is dedicated to using the most advanced imaging technology to increase farm profitability and reduce environmental impacts.
           </Typography>
-          <Image src={"https://www4.djicdn.com/cms_uploads/video/image/4977/cover_770x462_dd4c7a01fae2fa82e40be2d50330e72f.jpg"} aspectRatio="1.6667"></Image>
+          <Image src={"https://enterprise-insights.dji.com/hs-fs/hubfs/Blog%20Images/Use%20of%20Drones%20in%20Agriculture%20Today/T10%20Spraying.png?width=1680&name=T10%20Spraying.png"} aspectRatio="1.865"></Image>
 
         </Paper>
 
