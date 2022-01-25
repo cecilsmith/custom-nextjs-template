@@ -17,5 +17,7 @@ yarn-error.log*
 package-lock.json
 sandbox.config.json
 
+.env
+
 # Next.js
 /.next

@@ -12,7 +12,6 @@ import { IconButton } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import LoginIcon from '@mui/icons-material/Login';
-import AddIcon from '@mui/icons-material/Add';
 import Add from '@mui/icons-material/Add';
 
 export default function NavBar() {

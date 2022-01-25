@@ -16,7 +16,8 @@ export default function MyApp(props) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>DragonTech</title>
+        <title>Dragontech</title>
+        <link rel="shortcut icon" href="../static/imgs/favicon-2.ico" type="image/x-icon" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>

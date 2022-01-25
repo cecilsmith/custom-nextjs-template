@@ -1,28 +1,33 @@
 {
-  "name": "nextjs",
-  "version": "5.0.0",
-  "private": true,
-  "dependencies": {
-    "@emotion/cache": "latest",
-    "@emotion/react": "latest",
-    "@emotion/server": "latest",
-    "@emotion/styled": "latest",
-    "@mui/icons-material": "^5.2.4",
-    "@mui/material": "latest",
-    "clsx": "latest",
-    "crypto-js": "^4.1.1",
-    "material-ui-image": "^3.3.2",
-    "mysql": "^2.18.1",
-    "next": "latest",
-    "prop-types": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-swipeable-views": "^0.14.0"
-  },
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
-  }
+    "name": "nextjs",
+    "version": "5.0.0",
+    "private": true,
+    "dependencies": {
+        "@emotion/cache": "latest",
+        "@emotion/react": "latest",
+        "@emotion/server": "latest",
+        "@emotion/styled": "latest",
+        "@mui/icons-material": "^5.2.4",
+        "@mui/material": "latest",
+        "clsx": "latest",
+        "crypto-js": "^4.1.1",
+        "dotenv": "^14.2.0",
+        "leaflet": "^1.7.1",
+        "leaflet-defaulticon-compatibility": "^0.1.1",
+        "leaflet-geosearch": "^3.6.0",
+        "material-ui-image": "^3.3.2",
+        "mysql": "^2.18.1",
+        "next": "latest",
+        "prop-types": "latest",
+        "react": "latest",
+        "react-dom": "latest",
+        "react-leaflet": "^3.2.5",
+        "react-swipeable-views": "^0.14.0"
+    },
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+    }
 }
