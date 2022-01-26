@@ -1,6 +1,6 @@
 {
-    "name": "nextjs",
-    "version": "5.0.0",
+    "name": "dragontech",
+    "version": "0.0.1",
     "private": true,
     "dependencies": {
         "@emotion/cache": "latest",
@@ -28,5 +28,6 @@
         "dev": "next",
         "build": "next build",
         "start": "next start -p $PORT"
-    }
+    },
+    "author": "Nathanael Smith"
 }
