@@ -18,7 +18,8 @@ package-lock.json
 sandbox.config.json
 
 .env
-.map.jsx
+map.jsx
+next.config.js
 
 # Next.js
 /.next
