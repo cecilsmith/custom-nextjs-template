@@ -29,5 +29,8 @@
         "build": "next build",
         "start": "next start -p $PORT"
     },
-    "author": "Nathanael Smith"
+    "author": "Nathanael Smith",
+    "engines": {
+        "node": "16"
+    }
 }

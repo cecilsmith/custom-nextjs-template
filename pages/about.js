@@ -27,7 +27,7 @@ export default function About() {
             alignSelf='center'>
             About Us
           </Typography>
-          <video width="100%" height="100%" autoplay loop muted poster="https://dji-official-fe.djicdn.com/dps/a7b1548e7acd6939e08a4565e7ad023b.jpg">
+          <video width="100%" height="100%" autoPlay loop muted poster="https://dji-official-fe.djicdn.com/dps/a7b1548e7acd6939e08a4565e7ad023b.jpg">
             <source src="https://us-cms-videos.dji.net/video_trans/19f110d664334638b645108c2545fdd6/720.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
