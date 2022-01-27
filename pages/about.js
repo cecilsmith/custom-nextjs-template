@@ -78,7 +78,7 @@ export default function About() {
             <Divider variant='inset' component='li' />
 
             <ListItem alignItems='flex-start' onClick={() => {
-              window.location = 'https://github.com/cecilsmith'
+              window.open('https://github.com/cecilsmith', "_blank");
             }}>
               <ListItemAvatar>
                 <Avatar

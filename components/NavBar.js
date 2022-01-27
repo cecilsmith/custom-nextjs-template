@@ -26,51 +26,60 @@ export default function NavBar() {
 
   return (
     <Box>
-    <AppBar>
-      <Toolbar>
+      <AppBar>
+        <Toolbar>
 
-        <IconButton display='flex' size='large' edge='start' color='secondary' onClick={() => {
-          window.open("/", "_self")
-        }}>
-          <HomeIcon />
-        </IconButton>
+          <IconButton display='flex' size='large' edge='start' color='secondary' onClick={() => {
+            window.open("/", "_self")
+          }}>
+            <HomeIcon />
+          </IconButton>
 
-        <IconButton display='flex' size='large' color='secondary' onClick={() => {
-          window.open("/about", "_self")
-        }}>
-          <InfoIcon />
-        </IconButton>
+          <IconButton display='flex' size='large' color='secondary' onClick={() => {
+            window.open("/about", "_self")
+          }}>
+            <InfoIcon />
+          </IconButton>
 
-        <Typography display='flex' variant="header" sx={{ flexGrow: 1 }} marginLeft='1%' component='h2'>
-          Dragontech
-        </Typography>
+          <Typography display='flex' variant="header" sx={{ flexGrow: 1 }} marginLeft='1%' component='h2'>
+            Dragontech
+          </Typography>
 
-        <IconButton
-          size='large'
-          edge="end"
-          id="menu-button"
-          aria-controls={open ? 'menu-button' : undefined}
-          aria-haspopup="true"
-          aria-expanded={open ? 'true' : undefined}
-          onClick={handleClick}
-          color='secondary'
+          <IconButton
+            size='large'
+            edge="end"
+            id="menu-button"
+            aria-controls={open ? 'menu-button' : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? 'true' : undefined}
+            onClick={handleClick}
+            color='secondary'
           >
             <AccountCircleIcon />
           </IconButton>
-        <Menu
-          id='menu-button'
-          anchorEl={anchorEl}
-          open={open}
-          onClose={handleClose}
-          MenuListProps={{
-            'aria-labelledby': 'menu-button',
-          }}>
-            <MenuItem onClick={(handleClose) => {window.open("/signin", "_self")}}>Sign In<LoginIcon /></MenuItem>
-            <MenuItem onClick={(handleClose) => {window.open("/signup", "_self")}}>Sign Up<Add /></MenuItem>
+          <Menu
+            id='menu-button'
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            MenuListProps={{
+              'aria-labelledby': 'menu-button',
+            }}>
+
+            <MenuItem onClick={(handleClose) => { window.open("/signin", "_self") }}>
+              Sign In
+              <LoginIcon />
+            </MenuItem>
+
+            <MenuItem onClick={(handleClose) => { window.open("/signup", "_self") }}>
+              Sign Up
+              <Add />
+            </MenuItem>
+            
           </Menu>
 
-      </Toolbar>
-    </AppBar>
+        </Toolbar>
+      </AppBar>
     </Box>
   );
 }
