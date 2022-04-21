@@ -42,7 +42,7 @@ export default function Index() {
         <br />
 
         <Paper elevation="12">
-        <Typography variant='h6' component='h6' textAlign="left" p='15px'>
+        <Typography variant='h6' component='h6' textAlign="center" p='15px'>
             What does Dragontech do?
           </Typography>
         <Image src='https://dji-official-fe.djicdn.com/dps/539ea2ee06d9abc7464baacb8c275bad.jpg' aspectRatio="3.2" />
