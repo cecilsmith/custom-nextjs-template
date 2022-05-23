@@ -13,13 +13,6 @@ export default function Copyright() {
       {' '}
       {new Date().getFullYear()}.
     </Typography>
-    <Typography variant="body2" color="text.secondary" align='center'>
-        {'All Drone Images Property of '}
-        <Link target="_blank" rel="noopener" color="inherit" href="https://www.dji.com/">
-          DJI
-        </Link>
-        {'.'}
-    </Typography>
     </>
   );
 }

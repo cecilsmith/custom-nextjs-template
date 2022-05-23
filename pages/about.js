@@ -5,7 +5,8 @@ import Box from '@mui/material/Box';
 import Copyright from '../components/Copyright';
 import NavBar from '../components/NavBar';
 import { Avatar, Divider, List, ListItem, ListItemAvatar, ListItemText, Paper } from '@mui/material';
-import Image from 'material-ui-image';
+import Image from 'next/image';
+import drone1 from './../public/imgs/dji-g60537929c_1920.jpg';
 
 
 export default function About() {
@@ -27,17 +28,13 @@ export default function About() {
             alignSelf='center'>
             About Us
           </Typography>
-          <video width="100%" height="100%" autoPlay loop muted poster="https://dji-official-fe.djicdn.com/dps/a7b1548e7acd6939e08a4565e7ad023b.jpg">
-            <source src="https://us-cms-videos.dji.net/video_trans/19f110d664334638b645108c2545fdd6/720.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <Image src={drone1} />
         </div>
 
         <Paper elevation='8'>
           <Typography variant="body1" component="body" textAlign="center" paddingTop="15px" paddingBottom="15px" sx={{ fontWeight: '2' }}>
             Located in Minneapolis, MN and Huron, SD, Dragontech, LLC is dedicated to using the most advanced imaging technology to increase farm profitability and reduce environmental impacts.
           </Typography>
-          <Image src={"https://enterprise-insights.dji.com/hs-fs/hubfs/Blog%20Images/Use%20of%20Drones%20in%20Agriculture%20Today/T10%20Spraying.png?width=1680&name=T10%20Spraying.png"} aspectRatio="1.865"></Image>
 
         </Paper>
 

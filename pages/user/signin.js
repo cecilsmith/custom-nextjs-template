@@ -11,9 +11,9 @@ import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import theme from '../src/theme';
-import Copyright from '../components/Copyright';
-import NavBar from '../components/NavBar';
+import theme from '../../src/theme';
+import Copyright from '../../components/Copyright';
+import NavBar from '../../components/NavBar';
 
 export default function SignIn() {
     const handleSubmit = (event) => {

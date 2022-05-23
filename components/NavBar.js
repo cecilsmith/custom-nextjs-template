@@ -13,6 +13,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import LoginIcon from '@mui/icons-material/Login';
 import Add from '@mui/icons-material/Add';
+import WorkIcon from '@mui/icons-material/Work';
 
 export default function NavBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -29,10 +30,15 @@ export default function NavBar() {
       <AppBar>
         <Toolbar>
 
-          <IconButton display='flex' size='large' edge='start' color='secondary' onClick={() => {
-            window.open("/", "_self")
+        <Typography display='flex' variant="header" sx={{ flexGrow: 1 }} marginLeft='1%' component='h2' onClick={() => {
+            window.open("/", "_self")}}>
+            Dragontech
+          </Typography>
+
+          <IconButton display='flex' size='large' color='secondary' onClick={() => {
+            window.open("/products", "_self")
           }}>
-            <HomeIcon />
+            <WorkIcon />
           </IconButton>
 
           <IconButton display='flex' size='large' color='secondary' onClick={() => {
@@ -41,11 +47,21 @@ export default function NavBar() {
             <InfoIcon />
           </IconButton>
 
-          <Typography display='flex' variant="header" sx={{ flexGrow: 1 }} marginLeft='1%' component='h2'>
-            Dragontech
-          </Typography>
+          <IconButton display='flex' size='large' edge='end' marginRight="1%" color='secondary' onClick={() => {
+            window.open("/", "_self")
+          }}>
+            <HomeIcon />
+          </IconButton>
 
-          <IconButton
+        </Toolbar>
+      </AppBar>
+    </Box>
+  );
+}
+
+
+/* Code for account menu
+<IconButton
             size='large'
             edge="end"
             id="menu-button"
@@ -65,21 +81,16 @@ export default function NavBar() {
             MenuListProps={{
               'aria-labelledby': 'menu-button',
             }}>
-
-            <MenuItem onClick={(handleClose) => { window.open("/signin", "_self") }}>
+            
+            <MenuItem onClick={(handleClose) => { window.open("/user/signin", "_self") }}>
               Sign In
               <LoginIcon />
             </MenuItem>
 
-            <MenuItem onClick={(handleClose) => { window.open("/signup", "_self") }}>
+            <MenuItem onClick={(handleClose) => { window.open("/user/signup", "_self") }}>
               Sign Up
               <Add />
             </MenuItem>
             
-          </Menu>
-
-        </Toolbar>
-      </AppBar>
-    </Box>
-  );
-}
+          </Menu> 
+          */
