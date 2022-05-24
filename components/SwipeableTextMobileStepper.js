@@ -10,24 +10,48 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import theme from '../src/theme';
-import { height, maxHeight, width } from '@mui/system';
+import Image from 'next/image';
+import { height, maxHeight, maxWidth, width } from '@mui/system';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'DJI Matrice 300 RTK',
+    label: '1',
     imgPath:
-      'https://dji-official-fe.djicdn.com/dps/2e12dd56f69aff6dc94f4e03ca2eee10.jpg',
+      '/../public/imgs/fieldData/IMG_0080_1.jpg',
   },
   {
-    label: 'Industrial Uses of Our Technology',
+    label: '2',
     imgPath:
-      'https://dji-official-fe.djicdn.com/dps/5328c3f4c705108dd3995cd28b745fa0.jpg',
+      '/../public/imgs/fieldData/IMG_0080_2.jpg',
+  },
+  {
+    label: '3',
+    imgPath:
+      '/../public/imgs/fieldData/IMG_0080_3.jpg',
+  },
+  {
+    label: '4',
+    imgPath:
+      '/../public/imgs/fieldData/IMG_0080_4.jpg',
+  },
+  {
+    label: '5',
+    imgPath:
+      '/../public/imgs/fieldData/IMG_0080_5.jpg',
+  },
+  {
+    label: '6',
+    imgPath:
+      '/../public/imgs/fieldData/IMG_0080_6.jpg',
   }
 ];
 
 function SwipeableTextMobileStepper() {
+  const width = maxWidth;
+  const height = maxHeight;
+  
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -72,19 +96,20 @@ function SwipeableTextMobileStepper() {
         {images.map((step, index) => (
           <div key={step.label}>
             {Math.abs(activeStep - index) <= 2 ? (
-              <Box
-                component="img"
+              <Image
                 sx={{
-                  height: 'auto', //450
+                  height: '100%', //450
                   display: 'block',
                   //maxWidth: 1000, //750
                   overflow: 'hidden',
-                  width: '100%',
+                  width: '500px',
                   marginLeft: 'auto',
                   marginRight: 'auto',
                   marginTop: 'auto',
                   marginBottom: 'auto',
                 }}
+                width='100%'
+                height='100%'
                 src={step.imgPath}
                 alt={step.label}
               />
@@ -92,6 +117,7 @@ function SwipeableTextMobileStepper() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
+      {/** BOTTOM NAVIGATION */}
       <Paper
         elevation="2"
         sx={{

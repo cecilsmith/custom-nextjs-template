@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Copyright from '../components/Copyright';
 import NavBar from '../components/NavBar';
-import { Avatar, Button, Divider, List, ListItem, ListItemAvatar, ListItemText, Paper } from '@mui/material';
+import { Avatar, Button, Card, Divider, List, ListItem, ListItemAvatar, ListItemText, Paper } from '@mui/material';
 import Image from 'next/image';
 import Grid from '@mui/material/Grid';
 import ButtonBase from '@mui/material/ButtonBase';
@@ -43,7 +43,7 @@ export default function ProductsPage() {
                 </Paper>
 
                 <Grid container spacing={2} marginTop="1%">
-                    <Paper
+                    <Card
                         sx={{
                             p: 2,
                             margin: 'auto',
@@ -75,9 +75,9 @@ export default function ProductsPage() {
                                 </Grid>
                             </Grid>
                         </Grid>
-                    </Paper>
+                    </Card>
 
-                    <Paper
+                    <Card
                         sx={{
                             p: 2,
                             margin: 'auto',
@@ -109,7 +109,7 @@ export default function ProductsPage() {
                                 </Grid>
                             </Grid>
                         </Grid>
-                    </Paper>
+                    </Card>
                 </Grid>
 
             </Box>

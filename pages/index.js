@@ -8,18 +8,13 @@ import NavBarMode from '../components/NavBarMode';
 import { Paper, Toolbar } from '@mui/material';
 import Image from 'material-ui-image';
 import SwipeableTextMobileStepper from '../components/SwipeableTextMobileStepper.js';
+import drone2 from './../public/imgs/dji-gb061d63d7_1920.jpg';
 
 export default function Index() {
   return (
     <Container maxWidth="lg">
       <Box sx={{ my: 8 }}>
         <NavBar />
-
-        <Paper elevation="8">
-          <SwipeableTextMobileStepper />
-        </Paper>
-
-        <br />
 
         <Typography variant="body1" component="body" textAlign="center" p="15px">
           As the world's population increases and consumers' demand for environmentally responsible and organic agriculture increases, the need for utilizing technology to improve the efficiency of agricultural production is urgent.
