@@ -12,8 +12,9 @@ import { Button } from '@mui/material';
 
 
 export default function Imaging() {
-    const scale = '200%';
-    const thermalImageScale = '300%';
+    const cardWidth = '100%';
+    const fieldWidth = 1456;
+    const fieldHeight = 1088;
 
     return (
         <Container component="main" maxWidth="md">
@@ -56,54 +57,56 @@ export default function Imaging() {
 
                     <Box sx={{ my: 1 }}>
                         <Grid container
+                            paddingLeft={2}
+                            paddingRight={2}
                             direction="row"
                             justifyContent="center"
                             alignItems="flex-start"
-                            spacing={6}>
+                            spacing={2}>
 
-                            <Grid item sx>
-                                <Card>
-                                    <Image width={scale} height={scale} src={'/../public/imgs/fieldData/IMG_0080_1.jpg'}></Image>
+                            <Grid item sx={6} md={4}>
+                                <Card sx={{ width: cardWidth }}>
+                                    <Image width={fieldWidth} height={fieldHeight} src={'/../public/imgs/fieldData/IMG_0080_1.jpg'}></Image>
                                     <Typography textAlign={'center'} color={'violet'}>
                                         Violet
                                     </Typography>
                                 </Card>
                             </Grid>
-                            <Grid item sx>
-                                <Card>
-                                    <Image width={scale} height={scale} src={'/../public/imgs/fieldData/IMG_0080_2.jpg'} />
+                            <Grid item sx={6} md={4}>
+                                <Card sx={{ width: cardWidth }}>
+                                    <Image width={fieldWidth} height={fieldHeight} src={'/../public/imgs/fieldData/IMG_0080_2.jpg'} />
                                     <Typography textAlign={'center'} color={'blue'}>
                                         Blue
                                     </Typography>
                                 </Card>
                             </Grid>
-                            <Grid item sx>
-                                <Card>
-                                    <Image width={scale} height={scale} src={'/../public/imgs/fieldData/IMG_0080_3.jpg'} />
+                            <Grid item sx={6} md={4}>
+                                <Card sx={{ width: cardWidth }}>
+                                    <Image width={fieldWidth} height={fieldHeight} src={'/../public/imgs/fieldData/IMG_0080_3.jpg'} />
                                     <Typography textAlign={'center'} color={'green'}>
                                         Green
                                     </Typography>
                                 </Card>
                             </Grid>
-                            <Grid item sx>
-                                <Card>
-                                    <Image width={scale} height={scale} src={'/../public/imgs/fieldData/IMG_0080_4.jpg'} />
+                            <Grid item sx={6} md={4}>
+                                <Card sx={{ width: cardWidth }}>
+                                    <Image width={fieldWidth} height={fieldHeight} src={'/../public/imgs/fieldData/IMG_0080_4.jpg'} />
                                     <Typography textAlign={'center'} color={'yellow'}>
                                         Yellow
                                     </Typography>
                                 </Card>
                             </Grid>
-                            <Grid item sx>
-                                <Card>
-                                    <Image width={scale} height={scale} src={'/../public/imgs/fieldData/IMG_0080_5.jpg'} />
+                            <Grid item sx={6} md={4}>
+                                <Card sx={{ width: cardWidth }}>
+                                    <Image width={fieldWidth} height={fieldHeight} src={'/../public/imgs/fieldData/IMG_0080_5.jpg'} />
                                     <Typography textAlign={'center'} color={'orange'}>
                                         Orange
                                     </Typography>
                                 </Card>
                             </Grid>
-                            <Grid item sx>
-                                <Card>
-                                    <Image width={scale} height={scale} src={'/../public/imgs/fieldData/IMG_0080_6.jpg'} />
+                            <Grid item sx={6} md={4}>
+                                <Card sx={{ width: cardWidth }}>
+                                    <Image width={fieldWidth} height={fieldHeight} src={'/../public/imgs/fieldData/IMG_0080_6.jpg'} />
                                     <Typography textAlign={'center'} color={'red'}>
                                         Red
                                     </Typography>
@@ -116,7 +119,7 @@ export default function Imaging() {
                         As seen above, the multispectral capabilities of our drone packages allow us to analyze visual data across the spectrums of light. The separation of light bands grants us the ability to analyze the health of plants by measuring their color and infrared data.
                     </Typography>
                     <Typography padding={'5px'} variant="body1" textAlign="center" sx={{ fontWeight: '2' }}>
-                        For example, a farmer might want to water the light spots displayed on the 'green' image because there are hints of yellow. This likely means that those areas contain unhealthy plants.
+                        For example, a farmer might want to irrigate the light spots displayed on the 'green' image because there are hints of yellow. This likely means that those areas contain unhealthy plants.
                     </Typography>
                 </Paper>
 
@@ -129,19 +132,19 @@ export default function Imaging() {
                             direction="row"
                             justifyContent="center"
                             alignItems="flex-start" spacing={2}>
-                            <Grid item>
+                            <Grid item sx md='4'>
                                 <Card>
-                                    <Image width={scale} height={scale} src={'/../public/imgs/fieldData/SatImagery.png'} />
+                                    <Image width={766} height={1098} src={'/../public/imgs/fieldData/SatImagery.png'} />
                                 </Card>
                             </Grid>
-                            <Grid item>
+                            <Grid item sx md='4'>
                                 <Card>
-                                    <Image width={scale} height={scale} src={'/../public/imgs/fieldData/LiDarImagery.png'} />
+                                    <Image width={762} height={1098} src={'/../public/imgs/fieldData/LiDarImagery.png'} />
                                 </Card>
                             </Grid>
                         </Grid>
                         <Typography variant='body1' textAlign="center" paddingTop="5px" sx={{ fontWeight: '2', p: '5px' }}>
-                            Our LiDAR device will give the farmers accurate measurements of the height of the captured surface. This LiDAR data can be used to create 3D maps of the field, allowing for 3D analysis of plant growth and irrigation paths, thus improving the efficiency and consistency of one's farm.
+                            Our LiDAR device will give the farmers accurate measurements of the height of the captured surface. This LiDAR data can be used to create 3D maps of the field, allowing for 3D analysis of plant growth and irrigation paths, thus improving the profitability and efficiency of one's farm.
                         </Typography>
                     </Box>
                 </Paper>
@@ -151,8 +154,8 @@ export default function Imaging() {
                         Thermal Imaging
                     </Typography>
                     <Grid container justifyContent={'center'}>
-                        <Grid item>
-                        <Image width={thermalImageScale} height={thermalImageScale} src={'/../public/imgs/exbotj_ert029_f0003.jpeg'} />
+                        <Grid item sx md='6'>
+                        <Image width={1280} height={1089} src={'/../public/imgs/exbotj_ert029_f0003.jpeg'} />
                         </Grid>
                     </Grid>
                     <Typography variant='body2' textAlign={'center'} sx={{ fontStyle: 'italic', fontWeight: '2', p: '5px' }}>
