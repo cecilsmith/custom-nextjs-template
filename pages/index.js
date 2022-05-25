@@ -4,10 +4,8 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Copyright from '../components/Copyright';
 import NavBar from '../components/NavBar';
-import NavBarMode from '../components/NavBarMode';
 import { Paper, Toolbar } from '@mui/material';
 import Image from 'material-ui-image';
-import SwipeableTextMobileStepper from '../components/SwipeableTextMobileStepper.js';
 import drone2 from './../public/imgs/dji-gb061d63d7_1920.jpg';
 
 export default function Index() {

@@ -4,7 +4,7 @@ import { Link } from '@mui/material';
 
 export default function Copyright() {
   return (
-    <>
+    <div style={{ paddingTop: '5%' }}>
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="/">
@@ -13,6 +13,6 @@ export default function Copyright() {
       {' '}
       {new Date().getFullYear()}.
     </Typography>
-    </>
+    </div>
   );
 }

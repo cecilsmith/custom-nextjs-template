@@ -113,6 +113,7 @@ export default function ProductsPage() {
                 </Grid>
 
             </Box>
+            <Copyright />
         </Container>
     );
 }
