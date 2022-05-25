@@ -38,7 +38,7 @@ export default function ProductsPage() {
 
                 <Paper elevation='8'>
                     <Typography variant="body1" component="body" textAlign="center" paddingTop="15px" paddingBottom="15px" sx={{ fontWeight: '2' }}>
-                        At Dragontech, our products combine innovative technologies in new systems to increase the efficiency of farms and jobs of those across the Ag sector.
+                        At Dragontech, our products combine innovative technologies in new systems to increase the efficiency of farms and jobs of those across the Ag sector. 
                     </Typography>
                 </Paper>
 
@@ -55,8 +55,8 @@ export default function ProductsPage() {
                         }}>
                         <Grid container spacing={2}>
                             <Grid item>
-                                <ButtonBase sx={{ width: width / 5, height: height / 5 }}>
-                                    <Image alt="complex" src={fieldImage} />
+                                <ButtonBase sx={{ width: width / 5, height: height / 5 }} href={'/products/imaging'}>
+                                    <Image src={fieldImage} />
                                 </ButtonBase>
                             </Grid>
                             <Grid item xs={12} sm container>
@@ -90,7 +90,7 @@ export default function ProductsPage() {
                         <Grid container spacing={2}>
                             <Grid item>
                                 <ButtonBase sx={{ width: width / 5, height: height / 5 }}>
-                                    <Image alt="complex" src={livestockImage} />
+                                    <Image alt="complex" src={livestockImage} href={''} />
                                 </ButtonBase>
                             </Grid>
                             <Grid item xs={12} sm container>
