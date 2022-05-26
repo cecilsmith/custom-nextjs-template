@@ -6,13 +6,26 @@ import Copyright from '../../components/Copyright';
 import NavBar from '../../components/NavBar';
 import { Grid, Paper } from '@mui/material';
 import Image from 'next/image';
-import drone1 from '../../public/imgs/dji-gf782f5ab5_1920.jpg';
 import { Card } from '@mui/material';
 import { Button } from '@mui/material';
 
+// Image imports (helps with page loading)
+import drone1 from '../../public/imgs/dji-gf782f5ab5_1920.jpg';
+import multispectral1 from '../../public/imgs/fieldData/IMG_0080_1.jpg';
+import multispectral2 from '../../public/imgs/fieldData/IMG_0080_2.jpg';
+import multispectral3 from '../../public/imgs/fieldData/IMG_0080_3.jpg';
+import multispectral4 from '../../public/imgs/fieldData/IMG_0080_4.jpg';
+import multispectral5 from '../../public/imgs/fieldData/IMG_0080_5.jpg';
+import multispectral6 from '../../public/imgs/fieldData/IMG_0080_6.jpg';
+import SatImage from '../../public/imgs/fieldData/SatImagery.png';
+import SatLiDAR from '../../public/imgs/fieldData/LiDarImagery.png';
+import thermalImage from '../../public/imgs/exbotj_ert029_f0003.jpeg';
+
 
 export default function Imaging() {
+    // Formatting parameters
     const cardWidth = '100%';
+    // multispectral images parameters
     const fieldWidth = 1456;
     const fieldHeight = 1088;
 
@@ -66,7 +79,7 @@ export default function Imaging() {
 
                             <Grid item sx={6} md={4}>
                                 <Card sx={{ width: cardWidth }}>
-                                    <Image width={fieldWidth} height={fieldHeight} src={'/../public/imgs/fieldData/IMG_0080_1.jpg'}></Image>
+                                    <Image width={fieldWidth} height={fieldHeight} src={multispectral1}></Image>
                                     <Typography textAlign={'center'} color={'violet'}>
                                         Violet
                                     </Typography>
@@ -74,7 +87,7 @@ export default function Imaging() {
                             </Grid>
                             <Grid item sx={6} md={4}>
                                 <Card sx={{ width: cardWidth }}>
-                                    <Image width={fieldWidth} height={fieldHeight} src={'/../public/imgs/fieldData/IMG_0080_2.jpg'} />
+                                    <Image width={fieldWidth} height={fieldHeight} src={multispectral2} />
                                     <Typography textAlign={'center'} color={'blue'}>
                                         Blue
                                     </Typography>
@@ -82,7 +95,7 @@ export default function Imaging() {
                             </Grid>
                             <Grid item sx={6} md={4}>
                                 <Card sx={{ width: cardWidth }}>
-                                    <Image width={fieldWidth} height={fieldHeight} src={'/../public/imgs/fieldData/IMG_0080_3.jpg'} />
+                                    <Image width={fieldWidth} height={fieldHeight} src={multispectral3} />
                                     <Typography textAlign={'center'} color={'green'}>
                                         Green
                                     </Typography>
@@ -90,7 +103,7 @@ export default function Imaging() {
                             </Grid>
                             <Grid item sx={6} md={4}>
                                 <Card sx={{ width: cardWidth }}>
-                                    <Image width={fieldWidth} height={fieldHeight} src={'/../public/imgs/fieldData/IMG_0080_4.jpg'} />
+                                    <Image width={fieldWidth} height={fieldHeight} src={multispectral4} />
                                     <Typography textAlign={'center'} color={'yellow'}>
                                         Yellow
                                     </Typography>
@@ -98,7 +111,7 @@ export default function Imaging() {
                             </Grid>
                             <Grid item sx={6} md={4}>
                                 <Card sx={{ width: cardWidth }}>
-                                    <Image width={fieldWidth} height={fieldHeight} src={'/../public/imgs/fieldData/IMG_0080_5.jpg'} />
+                                    <Image width={fieldWidth} height={fieldHeight} src={multispectral5} />
                                     <Typography textAlign={'center'} color={'orange'}>
                                         Orange
                                     </Typography>
@@ -106,7 +119,7 @@ export default function Imaging() {
                             </Grid>
                             <Grid item sx={6} md={4}>
                                 <Card sx={{ width: cardWidth }}>
-                                    <Image width={fieldWidth} height={fieldHeight} src={'/../public/imgs/fieldData/IMG_0080_6.jpg'} />
+                                    <Image width={fieldWidth} height={fieldHeight} src={multispectral6} />
                                     <Typography textAlign={'center'} color={'red'}>
                                         Red
                                     </Typography>
@@ -135,12 +148,12 @@ export default function Imaging() {
                             alignItems="flex-start" spacing={2}>
                             <Grid item sx md='4'>
                                 <Card>
-                                    <Image width={766} height={1098} src={'/../public/imgs/fieldData/SatImagery.png'} />
+                                    <Image width={766} height={1098} src={SatImage} />
                                 </Card>
                             </Grid>
                             <Grid item sx md='4'>
                                 <Card>
-                                    <Image width={762} height={1098} src={'/../public/imgs/fieldData/LiDarImagery.png'} />
+                                    <Image width={762} height={1098} src={SatLiDAR} />
                                 </Card>
                             </Grid>
                         </Grid>
@@ -156,7 +169,7 @@ export default function Imaging() {
                     </Typography>
                     <Grid container justifyContent={'center'}>
                         <Grid item sx md='6'>
-                        <Image width={1280} height={1089} src={'/../public/imgs/exbotj_ert029_f0003.jpeg'} />
+                        <Image width={1280} height={1089} src={thermalImage} />
                         </Grid>
                     </Grid>
                     <Typography variant='body2' textAlign={'center'} sx={{ fontStyle: 'italic', fontWeight: '2', p: '5px' }}>

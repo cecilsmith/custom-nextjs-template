@@ -8,6 +8,8 @@ import { Grid, Paper, Toolbar } from '@mui/material';
 import Image from 'next/image';
 import { Button } from '@mui/material';
 import cornField from './../public/imgs/dji-g29f592e81_1280.jpg';
+import initialImage from './../public/imgs/drone-g1edf199d6_1280.jpg';
+import productsImage from './../public/imgs/dji-g737041eeb_1280.jpg';
 
 export default function Index() {
   return (
@@ -33,14 +35,14 @@ export default function Index() {
           </Grid>
         </Grid>
 
+        <Typography variant="body1" textAlign="center" paddingLeft={'15px'}paddingRight="15px" fontStyle={'italic'} pb={2} pt={4}>
+        Innovative solutions that increase agricultural profitability and efficiency
+        </Typography>
+
         {/* Image */}
         <Box sx={{ my: 2 }}>
-          <Image width={1280} height={797} src={'/../public/imgs/drone-g1edf199d6_1280.jpg'} />
+          <Image width={1280} height={797} src={initialImage} />
         </Box>
-
-        <Typography variant="body1" textAlign="center" paddingLeft={'15px'}paddingRight="15px" pb={2}>
-        As the world's population increases and consumers' demand for environmentally responsible and organic agriculture increases, the need for utilizing technology to improve the efficiency of the agricultural sector is urgent. Dragontech seeks to provide solutions to effectively tackle this challenge.
-        </Typography>
 
 
         <Paper elevation={8} sx={{ my: 2 }}>
@@ -54,7 +56,7 @@ export default function Index() {
             direction="row">
 
             <Grid item sx md={6}>
-              <Image width={1280} height={853} src={'/../public/imgs/dji-g737041eeb_1280.jpg'} />
+              <Image width={1280} height={853} src={productsImage} />
             </Grid>
 
             <Grid item sx md='6'>
@@ -122,7 +124,7 @@ export default function Index() {
                   <Typography variant="body1" textAlign="center" p="15px">
                   Founded in 2021, Dragontech is a startup based out of Huron, SD, and Minneapolis, MN. 
                   <br /><br />
-                  Dragontech hopes to initially serve the Midwest, beginning with partners in South Dakota and Minnesota. 
+                  Dragontech hopes to serve the Midwest, beginning with partners in South Dakota and Minnesota. 
                   </Typography>
                 </Grid>
                 <Grid item>
