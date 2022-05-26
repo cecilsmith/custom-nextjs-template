@@ -36,7 +36,7 @@ export default function ProductsPage() {
                     </Typography>
                 </div>
 
-                <Paper elevation='8'>
+                <Paper elevation={8}>
                     <Typography variant="body1" component="body" textAlign="center" paddingTop="15px" paddingBottom="15px" sx={{ fontWeight: '2' }}>
                         At Dragontech, our products combine innovative technologies in new systems to increase the efficiency of farms and jobs of those across the Ag sector. 
                     </Typography>

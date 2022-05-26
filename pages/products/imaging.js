@@ -8,6 +8,7 @@ import { Grid, Paper } from '@mui/material';
 import Image from 'next/image';
 import { Card } from '@mui/material';
 import { Button } from '@mui/material';
+import { Link } from '@mui/material';
 
 // Image imports (helps with page loading)
 import drone1 from '../../public/imgs/dji-gf782f5ab5_1920.jpg';
@@ -65,7 +66,7 @@ export default function Imaging() {
                         Multispectral Imaging
                     </Typography>
                     <Typography padding={'5px'} variant="body1" textAlign="center" sx={{ fontWeight: '2' }}>
-                    Dragontech solutions employ multispectral imaging to monitor plant health and growth accurately. The imaging technology that we are developing will allow farmers to accurately count and monitor crops. With these innovations, farmers will be able to identify where nutrients and water are needed—significantly improving the efficiency of the farms. 
+                        Dragontech solutions employ multispectral imaging to monitor plant health and growth accurately. The imaging technology that we are developing will allow farmers to accurately count and monitor crops. With these innovations, farmers will be able to identify where nutrients and water are needed—significantly improving the efficiency of the farms.
                     </Typography>
 
                     <Box sx={{ my: 1 }}>
@@ -129,7 +130,7 @@ export default function Imaging() {
                     </Box>
 
                     <Typography padding={'5px'} variant="body1" textAlign="center" sx={{ fontWeight: '2' }}>
-                    As seen above, the multispectral capabilities of our drone packages allow us to analyze visual data across the spectrums of light. The separation of light bands grants us the ability to analyze the health of plants by measuring their color and infrared data.
+                        As seen above, the multispectral capabilities of our drone packages allow us to analyze visual data across the spectrums of light. The separation of light bands grants us the ability to analyze the health of plants by measuring their color and infrared data.
                     </Typography>
                     <Typography padding={'5px'} variant="body1" textAlign="center" sx={{ fontWeight: '2' }}>
                         For example, a farmer might want to irrigate the light spots displayed on the 'green' image because there are hints of yellow. This likely means that those areas contain unhealthy plants.
@@ -158,7 +159,7 @@ export default function Imaging() {
                             </Grid>
                         </Grid>
                         <Typography variant='body1' textAlign="center" paddingTop="5px" sx={{ fontWeight: '2', p: '5px' }}>
-                        Our LiDAR device will give the farmers accurate measurements of the height of the captured surface. This LiDAR data can be used to create 3D maps of the field, allowing for 3D analysis of plant growth and irrigation paths, thus improving the efficiency and consistency of one's farm.
+                            Our LiDAR device will give the farmers accurate measurements of the height of the captured surface. This LiDAR data can be used to create 3D maps of the field, allowing for 3D analysis of plant growth and irrigation paths, thus improving the efficiency and consistency of one's farm.
                         </Typography>
                     </Box>
                 </Paper>
@@ -169,19 +170,21 @@ export default function Imaging() {
                     </Typography>
                     <Grid container justifyContent={'center'}>
                         <Grid item sx md='6'>
-                        <Image width={1280} height={1089} src={thermalImage} />
+                            <Image width={1280} height={1089} src={thermalImage} />
                         </Grid>
                     </Grid>
                     <Typography variant='body2' textAlign={'center'} sx={{ fontStyle: 'italic', fontWeight: '2', p: '5px' }}>
-                        Image Credit: J. Miguel Costa, Olga M. Grant, and M. Manuela Chaves / Journal of Experimental Botany
+                        <Link href='https://academic.oup.com/jxb/article/64/13/3937/435734'>
+                            Image Credit: J. Miguel Costa, Olga M. Grant, and M. Manuela Chaves / Journal of Experimental Botany
+                        </Link>
                     </Typography>
                     <Typography variant='body1' textAlign='center' sx={{ fontWeight: '2', p: '5px' }}>
-                    The thermal imaging capabilities of our package will allow farmers to observe how their plants are responding to heat. The data collected here will help the farmers determine whether the plants need water. The thermal data will reduce costs long-term because water will be used with greater efficiency.
+                        The thermal imaging capabilities of our package will allow farmers to observe how their plants are responding to heat. The data collected here will help the farmers determine whether the plants need water. The thermal data will reduce costs long-term because water will be used with greater efficiency.
                     </Typography>
                 </Paper>
 
                 <Paper sx={{ my: 4 }}>
-                <Typography fontFamily='unset' padding={'5px'} variant='h6' textAlign={'center'} sx={{ fontWeight: 'bold' }}>
+                    <Typography fontFamily='unset' padding={'5px'} variant='h6' textAlign={'center'} sx={{ fontWeight: 'bold' }}>
                         Contact Us
                     </Typography>
                     <Typography variant='body1' textAlign='center' sx={{ fontWeight: '2', p: '5px' }}>
@@ -189,12 +192,12 @@ export default function Imaging() {
                     </Typography>
                     <Grid sx={{ my: 2 }} paddingBottom="15px" container justifyContent={'center'}>
                         <Grid item>
-                        <Button alignItems='center' variant="contained" href="mailto: blank@dragontech.solutions" color='secondary' background-color='primary' cursor="pointer">
-                                            Email Us
-                                        </Button>
+                            <Button alignItems='center' variant="contained" href="mailto: contact@dragontech.solutions" color='secondary' background-color='primary' cursor="pointer">
+                                Email Us
+                            </Button>
                         </Grid>
                     </Grid>
-                    
+
                 </Paper>
                 <Copyright />
             </Box>

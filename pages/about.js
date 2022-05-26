@@ -6,6 +6,9 @@ import Copyright from '../components/Copyright';
 import NavBar from '../components/NavBar';
 import { Avatar, Divider, List, ListItem, ListItemAvatar, ListItemText, Paper } from '@mui/material';
 import Image from 'next/image';
+import { Grid } from '@mui/material';
+import { Button } from '@mui/material';
+
 import drone1 from './../public/imgs/dji-g60537929c_1920.jpg';
 
 
@@ -31,7 +34,7 @@ export default function About() {
           <Image src={drone1} />
         </div>
 
-        <Paper elevation='8'>
+        <Paper elevation={8}>
           <Typography variant="body1" component="body" textAlign="center" paddingTop="15px" paddingBottom="15px" sx={{ fontWeight: '2' }}>
             Located in Minneapolis, MN and Huron, SD, Dragontech, LLC is dedicated to using the most advanced imaging technology to increase farm profitability and reduce environmental impacts.
           </Typography>
@@ -40,7 +43,7 @@ export default function About() {
 
         <br />
 
-        <Paper elevation="8">
+        <Paper elevation={8}>
           <Typography variant='header1' component="h2" textAlign='left' paddingTop='1%' paddingLeft='1%'>
             Our Staff:
           </Typography>
@@ -79,11 +82,11 @@ export default function About() {
             }}>
               <ListItemAvatar>
                 <Avatar
-                  src="https://avatars.githubusercontent.com/u/19243227?v=4"
+                  src={"https://avatars.githubusercontent.com/u/19243227?v=4"}
                   sx={{
                     width: 56,
                     height: 56,
-                    left: "-15%",
+                    left: "-15%"
                   }} />
               </ListItemAvatar>
               <ListItemText
@@ -98,7 +101,7 @@ export default function About() {
                       variant='body2'
                       color="text.secondary"
                     >
-                      Intern, Lead Design
+                      Intern, Website Dev
                     </Typography>
                   </React.Fragment>
                 }
@@ -110,7 +113,22 @@ export default function About() {
           </List>
         </Paper>
 
-        <br />
+        <Paper sx={{ my: 4 }}>
+          <Typography fontFamily='unset' padding={'5px'} variant='h6' textAlign={'center'} sx={{ fontWeight: 'bold' }}>
+            Contact Us
+          </Typography>
+          <Typography variant='body1' textAlign='center' sx={{ fontWeight: '2', p: '5px' }}>
+            To find out more or to reach out to us, please send us an email.
+          </Typography>
+          <Grid sx={{ my: 2 }} paddingBottom="15px" container justifyContent={'center'}>
+            <Grid item>
+              <Button alignItems='center' variant="contained" href="mailto: contact@dragontech.solutions" color='secondary' background-color='primary' cursor="pointer">
+                Email Us
+              </Button>
+            </Grid>
+          </Grid>
+
+        </Paper>
 
         <Copyright />
       </Box>

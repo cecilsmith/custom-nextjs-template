@@ -47,7 +47,7 @@ export default function NavBar() {
             <InfoIcon />
           </IconButton>
 
-          <IconButton display='flex' size='large' edge='end' marginRight="1%" color='secondary' onClick={() => {
+          <IconButton display='flex' size='large' edge='end' color='secondary' onClick={() => {
             window.open("/", "_self")
           }}>
             <HomeIcon />

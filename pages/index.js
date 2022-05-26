@@ -7,6 +7,7 @@ import NavBar from '../components/NavBar';
 import { Grid, Paper, Toolbar } from '@mui/material';
 import Image from 'next/image';
 import { Button } from '@mui/material';
+
 import cornField from './../public/imgs/dji-g29f592e81_1280.jpg';
 import initialImage from './../public/imgs/drone-g1edf199d6_1280.jpg';
 import productsImage from './../public/imgs/dji-g737041eeb_1280.jpg';
@@ -14,29 +15,29 @@ import productsImage from './../public/imgs/dji-g737041eeb_1280.jpg';
 export default function Index() {
   return (
     <Container maxWidth="lg">
-      <Box sx={{ my: 10 }}>
+      <Box sx={{ my: 12 }}>
         <NavBar />
 
         { /* Website logo */ }
         <Grid container spacing={1} >
           <Grid item xs={6} md={10}>
-            <Typography paddingLeft={'15px'} variant='h2' component='h2' fontWeight={'bold'} textAlign={'center'}>
+            <Typography color='secondary' paddingLeft={'15px'} variant='h2' component='h2' fontWeight={'bold'} textAlign={'center'}>
               Dragontech
             </Typography>
           </Grid>
 
           <Grid item sx={6} md={2} />
-          <Grid item sx={6} md={2} />
+          <Grid item sx={6} md={2.5} />
 
-          <Grid item sx={6} md={10}>
-            <Typography paddingRight={'30%'} variant='h2' component='h2' fontWeight={'bold'} textAlign={'right'}>
+          <Grid item sx={6} md={9.5}>
+            <Typography color={'primary'} paddingRight={'30%'} variant='h2' component='h2' fontWeight={'bold'} textAlign={'right'}>
               .solutions
             </Typography>
           </Grid>
         </Grid>
 
-        <Typography variant="body1" textAlign="center" paddingLeft={'15px'}paddingRight="15px" fontStyle={'italic'} pb={2} pt={4}>
-        Innovative solutions that increase agricultural profitability and efficiency
+        <Typography variant="body1" textAlign="center" paddingLeft={'15px'}paddingRight="15px" fontStyle={'italic'} fontSize={'20px'} pb={2} pt={4}>
+        Innovative solutions to increase agricultural profitability and efficiency
         </Typography>
 
         {/* Image */}
@@ -45,7 +46,7 @@ export default function Index() {
         </Box>
 
 
-        <Paper elevation={8} sx={{ my: 2 }}>
+        <Paper elevation={8} sx={{ my: 4 }}>
           <Grid container spacing={2}
             justifyContent='center'
             justifyItems={'center'}
