@@ -129,7 +129,7 @@ export default function Index() {
                   </Typography>
                 </Grid>
                 <Grid item>
-                  <Button sx={{ my: 2 }} variant="contained" href="/products/" color='secondary' background-color='primary' cursor="pointer">
+                  <Button sx={{ my: 2 }} variant="contained" href="/about/" color='secondary' background-color='primary' cursor="pointer">
                     About Us Page
                   </Button>
                 </Grid>
