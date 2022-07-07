@@ -23,3 +23,6 @@ next.config.js
 
 # Next.js
 /.next
+
+# static folder for DigitalOcean app platform
+_static
