@@ -1,4 +1,4 @@
-Copyright (C) Cecil Smith - All Rights Reserved
+**Copyright (C) Cecil Smith - All Rights Reserved**
 
 Unauthorized copying of this file, via any medium is strictly prohibited
 
