@@ -1,5 +1,5 @@
 {
-    "name": "dragontech",
+    "name": "samplewebsite",
     "version": "0.0.1",
     "private": true,
     "dependencies": {
@@ -7,30 +7,23 @@
         "@emotion/react": "latest",
         "@emotion/server": "latest",
         "@emotion/styled": "latest",
-        "@mui/icons-material": "^5.2.4",
+        "@mui/icons-material": "latest",
         "@mui/material": "latest",
         "clsx": "latest",
-        "crypto-js": "^4.1.1",
         "dotenv": "^14.2.0",
-        "leaflet": "^1.7.1",
-        "leaflet-defaulticon-compatibility": "^0.1.1",
-        "leaflet-geosearch": "^3.6.0",
-        "mysql": "^2.18.1",
         "next": "latest",
         "prop-types": "latest",
         "react": "latest",
         "react-dom": "latest",
-        "react-leaflet": "^3.2.5",
-        "react-swipeable-views": "^0.14.0"
+        "sharp": "^0.30.7"
     },
     "scripts": {
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
         "export": "npm run build && next export -o_ static"
-
     },
-    "author": "Nathanael Smith",
+    "author": "Cecil 'Nathanael' Smith",
     "engines": {
         "node": "16"
     }

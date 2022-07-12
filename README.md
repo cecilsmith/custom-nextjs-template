@@ -35,6 +35,3 @@ Written by Cecil Smith, July 2022
 10. The website should be running on port 3000.
 
 <img width="344" alt="Screen Shot 2022-07-12 at 4 59 04 PM" src="https://user-images.githubusercontent.com/19243227/178602756-e57f617c-3691-4624-ae04-57106fcd3550.png">
-
-
-
