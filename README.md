@@ -1,3 +1,12 @@
+**Copyright (C) Cecil Smith - All Rights Reserved**
+
+Unauthorized copying of this file, via any medium is strictly prohibited
+
+Proprietary and confidential
+
+Written by Cecil Smith, July 2022
+
+
 # Installation instructions
 
 1. Open Terminal
@@ -13,7 +22,7 @@
 5. Now that the repo is downloaded, we need to make sure Node.js is installed. Check whether it is installed with `node`
    1. If it is installed, got to step 6.
    2. If it is not installed, install it with the following commands:
-      1. 
+
 
 # Next.js with React and MUI
 Install it and run:
