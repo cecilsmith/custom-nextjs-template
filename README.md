@@ -17,7 +17,7 @@ Written by Cecil Smith, July 2022
 3. Check if git is installed with `git --version`. If installed, skip to step 4.
    1. If not installed, follow this page's instructions: [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
    2. Check if git is installed again with `git --version`
-4. Run `git clone https://github.com/Kaeo-Design/dragontech-nextjs.git` to clone the repo into our directory
+4. Run `git clone *https://git_repo_link.git*` to clone the repo into our directory
    1. If this fails, you may need to login to GitHub through your terminal. More information can be found [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). 
       * Get a `Personal Access Key` from your account settings under `Developer Options`.
       * Create a PAT and take note of it.
@@ -35,3 +35,17 @@ Written by Cecil Smith, July 2022
 10. The website should be running on port 3000.
 
 <img width="344" alt="Screen Shot 2022-07-12 at 4 59 04 PM" src="https://user-images.githubusercontent.com/19243227/178602756-e57f617c-3691-4624-ae04-57106fcd3550.png">
+
+```mermaid
+flowchart TD
+   A[Open Terminal] --> B[Create a new directory and navigate to it: `cd ./Desktop && mkdir Website && cd ./Website`];
+   B --> C{Check if Git is installed with `git --version`.};
+   C -- Yes --> D[git clone *https://git_repo_link.git* to clone the repo into our directory];
+   C -- No --> E[Install Git with this guide];
+   E -.-> B;
+   E --> F[If this fails, you may need to login to GitHub through your terminal. More information can be found here];
+   click E href "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git";
+   click F href "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token";
+   linkStyle 2 stroke:green,stroke-width:4px;
+   linkStyle 3 stroke:red,stroke-width:4px;
+```
