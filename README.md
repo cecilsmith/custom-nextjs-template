@@ -9,7 +9,7 @@ Written by Cecil Smith, July 2022
 
 # Next.js with React and MUI
 
-# Installation instructions
+# Installation Instructions (for Unix server)
 
 1. Open Terminal
 2. Create a new directory and navigate to it
