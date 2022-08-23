@@ -15,30 +15,27 @@ import drone1 from './../public/imgs/dji-g60537929c_1920.jpg';
 export default function About() {
 
   return (
-    <Container component="main" maxWidth="md">
+    <Container maxWidth="md">
       <Box sx={{ my: 8 }}>
         <NavBar />
 
-        <div>
           <Typography
             fontFamily='unset'
             variant="h4"
             component="h1"
             zIndex='2'
             justifyContent='center'
-            alignItems='center'
+            //alignItems='center'
             mb='1pc'
             alignSelf='center'>
             About Us
           </Typography>
           <Image src={drone1} />
-        </div>
 
         <Paper elevation={8}>
           <Typography variant="body1" component="body" textAlign="center" paddingTop="15px" paddingBottom="15px" sx={{ fontWeight: '2' }}>
             Located in Minneapolis, MN and Huron, SD, Dragontech, LLC is dedicated to using the most advanced imaging technology to increase farm profitability and reduce environmental impacts.
           </Typography>
-
         </Paper>
 
         <br />
@@ -127,7 +124,6 @@ export default function About() {
               </Button>
             </Grid>
           </Grid>
-
         </Paper>
 
         <Copyright />

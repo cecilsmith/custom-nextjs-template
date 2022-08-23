@@ -1,6 +1,6 @@
 {
-    "name": "samplewebsite",
-    "version": "0.0.1",
+    "name": "dragontech-website",
+    "version": "0.1.01",
     "private": true,
     "dependencies": {
         "@emotion/cache": "latest",
@@ -15,7 +15,8 @@
         "prop-types": "latest",
         "react": "latest",
         "react-dom": "latest",
-        "sharp": "^0.30.7"
+        "sharp": "^0.30.7",
+        "styled-components": "^5.3.5"
     },
     "scripts": {
         "dev": "next dev",
@@ -26,5 +27,8 @@
     "author": "Cecil 'Nathanael' Smith",
     "engines": {
         "node": "16"
+    },
+    "devDependencies": {
+        "babel-plugin-styled-components": "^2.0.7"
     }
 }
